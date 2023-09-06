@@ -5,55 +5,61 @@
 }
 
 body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-family: 'Open Sans', sans-serif;
   text-align: center;
-
 }
 
-#hero{
-  width: 592px;
-  margin: 0 auto 72px;
-
-}
-
-#hero img{
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 72px;
 }
-
-h1{
+ #hero img{
+  margin-bottom: 72px;
+ }
+ #hero h1{
   font-family: 'Inter', sans-serif;
   font-size: 49px;
   line-height: 56px;
   font-weight: normal;
   margin-bottom: 32px;
-}
+ }
+ #hero p{
+  width: 592px;
+ }
 
-h1 span{
+ h1 span{
   font-weight: bold;
 }
 
-
-span, a{
+ span, a{
   color: #FF9900;
 }
 
-p, #footer{
+ p, #footer{
   color: #7D7987;
   font-size: 14px;
   line-height: 28px;
 }
 
-footer a + a{
-  margin-left: 28px;
-}
-
-#line{
+ footer #line{
+  border: solid 1px #ECEFF2;
   width: 568px;
-  height: 0;
-  margin: 0 auto 8px;
-  border: 1px solid #ECEFF2;
-}
+  margin-bottom: 8px;
+ }
 
+ footer{
+  text-align: center;
+  margin-bottom: 32px;
+ }
+ footer a + a{
+  margin-left: 28px;
+} 
 #balls{
   position: fixed;
   bottom: 0;
